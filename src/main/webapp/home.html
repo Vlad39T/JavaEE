@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: #235d26;
+        }
+
+        form {
+            padding: 20px;
+            border: 2px black solid;
+            margin-top: 200px;
+            display: inline-block;
+            margin-left: 600px;
+            background-color: #989191;
+        }
+
+        input {
+            display: block;
+            margin-top: -10px;
+        }
+
+        button {
+            margin-top: 15px;
+            position: relative;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+<form action="/home" method="post">
+    <p>Введіть прізвище(латинськими)</p>
+    <label for="lastname"><input type="text" name="lastname" id="lastname"></label>
+    <p>Введіть ім'я(латинськими)</p>
+    <label for="name"><input type="text" name="name" id="name"></label>
+    <p>Введіть ім'я по батькові(латинськими)</p>
+    <label for="patronymic"><input type="text" name="patronymic" id="patronymic"></label>
+    <p>Номер телефону (099-12-12-123)</p>
+    <label for="tel"><input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"></label>
+    <p>Електронна пошта</p>
+    <label for="email"></label><input type="email" name="email" id="email" pattern="/^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i" >
+    <p>Вік</p>
+    <label for="old"><input type="text" name="old" id="old" pattern="[0-9]{2}" ></label>
+    <button type="submit">Save</button>
+</form>
+
+</body>
+</html>
