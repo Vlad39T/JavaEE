@@ -1,4 +1,4 @@
-package Homeworks;
+package Homeworks.HW1;
 
 
 import javax.servlet.ServletException;

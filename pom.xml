@@ -23,6 +23,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>JavaEE</finalName>
+    <finalName>JavaEE</finalName><plugins><plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><configuration><source>15</source><target>15</target></configuration></plugin></plugins>
   </build>
 </project>
