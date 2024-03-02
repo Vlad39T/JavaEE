@@ -1,4 +1,4 @@
-package Homeworks.HW1;
+package Homeworks.WEB.HW1;
 
 public class Person {
     private String lastname;

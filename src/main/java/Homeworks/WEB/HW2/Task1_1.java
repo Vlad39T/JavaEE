@@ -1,4 +1,4 @@
-package Homeworks.HW2;
+package Homeworks.WEB.HW2;
 
 import java.io.*;
 import java.net.InetAddress;

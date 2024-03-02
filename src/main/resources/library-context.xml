@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="Homeworks.Spring.HW1.Library" id="library">
+<property name="idLibrary" value="1"/>
+<property name="city" value="Kiev"/>
+<property name="name" value="Vernadsky National Library"/>
+<property name="autors" >
+    <list>
+        <value>Leo Tolstoy</value>
+        <value>Mark Twain</value>
+    </list>
+</property>
+<property name="books">
+    <list>
+        <value>War and Peace</value>
+        <value>Anna Karenina</value>
+        <value>The Adventures of Tom Sawyer</value>
+        <value>Huckleberry Finn</value>
+    </list>
+</property>
+</bean>
+
+    <bean class="Homeworks.Spring.HW1.Autor" id="autor">
+        <property name="idAutor" value="1"/>
+        <property name="name" value="Leo"/>
+        <property name="surname" value="Tolstoy"/>
+        <property name="books" >
+            <list>
+                <value>War and Peace</value>
+                <value>Anna Karenina</value>
+            </list>
+        </property>
+    </bean>
+    <bean class="Homeworks.Spring.HW1.Autor" id="autor2">
+        <property name="idAutor" value="2"/>
+        <property name="name" value="Mark"/>
+        <property name="surname" value="Twain"/>
+        <property name="books" >
+            <list>
+                <value>The Adventures of Tom Sawyer</value>
+                <value>Huckleberry Finn</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="Homeworks.Spring.HW1.Book" id="book">
+        <property name="idBook" value="1"/>
+        <property name="autor" value="Leo Tolstoy"/>
+        <property name="title" value="War and Peace"/>
+    </bean>
+
+    <bean class="Homeworks.Spring.HW1.Book" id="book1">
+        <property name="idBook" value="2"/>
+        <property name="autor" value="Leo Tolstoy"/>
+        <property name="title" value="Anna Karenina"/>
+    </bean>
+
+    <bean class="Homeworks.Spring.HW1.Book" id="book2">
+        <property name="idBook" value="3"/>
+        <property name="autor" value="Mark Twain"/>
+        <property name="title" value="The Adventures of Tom Sawyer"/>
+    </bean>
+
+    <bean class="Homeworks.Spring.HW1.Book" id="book3">
+        <property name="idBook" value="4"/>
+        <property name="autor" value="Mark Twain"/>
+        <property name="title" value="Huckleberry Finn"/>
+    </bean>
+
+</beans>
